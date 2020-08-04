@@ -22,24 +22,27 @@ p{
   font-family: 'Montserrat', sans-serif;
 }
 
-.tittle {
+
+
+        /* TITLE SECTION */
+#title {
   background-color: #ff4c68;
+}
+
+.container-fluid{
+  padding: 3% 15% 9%;
+}
+
+.navbar{
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 2.5rem;
 }
 
 .logo {
     font-size: 3rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 600;
-}
-
-.imagenfront{
-  width: 65%;
-  -webkit-transform:rotate(25deg);
-  -ms-transform:rotate(25deg);
-  -moz-transform:rotate(25deg);
-  -o-transform:rotate(25deg);
-  transform: rotate(25deg);
-
 }
 
 .nav-item{
@@ -51,26 +54,37 @@ p{
   font-family: 'Montserrat', sans-serif;
 }
 
-.navbar{
-  padding-left: 0;
-  padding-right: 0;
-  margin-bottom: 2.5rem;
-}
-
-.container-fluid{
-  padding: 3% 15%;
-}
-
 .downloadbtn{
   margin: 5% 3% 5% 0;
 }
 
-.properties-container{
-padding: 7% 15%;
+.imagenfront{
+  width: 57%;
+  transform: rotate(25deg);
+  left: 7%;
+  position: absolute;
 }
+
+
+
+        /* FEATURES SECTION */
+#features{
+  background-color: white;
+  padding: 7% 15%;
+  position: relative;
+  z-index: 1;
+}
+
+/* .properties-container{
+padding: 7% 15%;
+} */
 
 .properties-row{
   text-align: center;
+}
+
+.properties-content{
+  padding: 5%;
 }
 
 .properties-img{
@@ -83,13 +97,22 @@ padding: 7% 15%;
   color: #E53333
 }
 
-.properties-content{
-  padding: 5%;
-}
-
 .properties-text{
   color: #8f8f8f;
   font-weight: normal;
+}
+
+
+
+        /* TESTIMONIAL SECTION */
+#testimonials{
+  text-align: center;
+  background-color: #ff4c68;
+  color: white;
+}
+
+.carousel-item{
+  padding: 7% 15%;
 }
 
 .testimonial-image{
@@ -98,33 +121,74 @@ padding: 7% 15%;
   margin: 20px;
 }
 
+
+
+        /* PRESS SECTION */
+#press{
+    background-color: #ff4c68;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
 .press-logo{
   width: 15%;
   margin: 20px 20px 15px;
 }
 
-.carousel-item{
-  padding: 7% 15%;
-}
 
-#testimonials{
-  text-align: center;
-  background-color: #ff4c68;
-  color: white;
-}
 
-#press{
-    background-color: #ff4c68;
-    padding-bottom: 3%;
-    text-align: center;
-
-}
-
+        /* PRICING SECTION */
 #pricing{
   padding: 100px;
   text-align: center;
 }
 
 .pricing-column {
-  padding: 3% 2;
+  padding: 3% 2%;
+}
+
+
+
+        /* CALL TO ACTION (CTA) SECTION */
+#cta{
+  text-align: center;
+  background-color: #ff4c68;
+  padding: 6% 0;
+}
+
+.cta-text{
+  font-size: 3rem;
+  color: white;
+  padding: 0 15%;
+}
+
+.downloadbtnfoot{
+  margin: 3% 1%;
+}
+
+
+
+        /* FOOTER SECTION */
+#footer{
+  text-align: center;
+  padding: 4%;
+}
+
+.ico-foot{
+  margin: 1%;
+}
+
+
+
+        /* @MEDIA CLASSES */
+@media (max-width: 1028px) {
+  .tittle{
+    text-align: center;
+  }
+
+  .imagenfront{
+    position: static;
+    transform: rotate(0);
+    /* Funciona como un if para hacerlo responsive - max width determina el ancho de la pantalla */
+  }
 }
