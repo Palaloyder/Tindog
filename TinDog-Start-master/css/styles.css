@@ -1,21 +1,11 @@
-h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4rem;
-    line-height: 1.5;
-    font-weight: 900;
-    color: white;
-}
-
-h2{
-  font-family: 'Montserrat';
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-h3{
+body{
   font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 1.4rem;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 
 p{
@@ -24,13 +14,40 @@ p{
 
 
 
-        /* TITLE SECTION */
-#title {
-  background-color: #ff4c68;
+        /* HEADINGS */
+.big-heading{
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: white;
+
 }
 
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+
+        /* CONTAINERS */
 .container-fluid{
   padding: 3% 15% 9%;
+}
+
+        /* COLORS */
+.color-section{
+  background-color: #ff4c68;
+  color: white;
+}
+
+.white-section{
+  background-color: white;
+}
+
+        /* TITLE SECTION */
+#title .container-fluid{
+    padding: 3% 15% 5%;
+    text-align: left;
 }
 
 .navbar{
@@ -69,18 +86,13 @@ p{
 
         /* FEATURES SECTION */
 #features{
-  background-color: white;
-  padding: 7% 15%;
+
   position: relative;
   z-index: 1;
 }
 
-/* .properties-container{
-padding: 7% 15%;
-} */
-
-.properties-row{
-  text-align: center;
+.features-title{
+  font-size: 1.4rem;
 }
 
 .properties-content{
@@ -105,14 +117,9 @@ padding: 7% 15%;
 
 
         /* TESTIMONIAL SECTION */
-#testimonials{
-  text-align: center;
-  background-color: #ff4c68;
-  color: white;
-}
-
-.carousel-item{
-  padding: 7% 15%;
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-image{
@@ -125,9 +132,7 @@ padding: 7% 15%;
 
         /* PRESS SECTION */
 #press{
-    background-color: #ff4c68;
     padding-bottom: 3%;
-    text-align: center;
 }
 
 .press-logo{
@@ -140,7 +145,11 @@ padding: 7% 15%;
         /* PRICING SECTION */
 #pricing{
   padding: 100px;
-  text-align: center;
+}
+
+.price-text{
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .pricing-column {
@@ -150,16 +159,8 @@ padding: 7% 15%;
 
 
         /* CALL TO ACTION (CTA) SECTION */
-#cta{
-  text-align: center;
-  background-color: #ff4c68;
-  padding: 6% 0;
-}
-
 .cta-text{
   font-size: 3rem;
-  color: white;
-  padding: 0 15%;
 }
 
 .downloadbtnfoot{
@@ -169,11 +170,6 @@ padding: 7% 15%;
 
 
         /* FOOTER SECTION */
-#footer{
-  text-align: center;
-  padding: 4%;
-}
-
 .ico-foot{
   margin: 1%;
 }
